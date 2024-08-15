@@ -1,4 +1,4 @@
-# Fullstack-APP-TEMPLATE
+# Fullstack-coding-challenge
 This project uses npm workspace and Docker to package and run the frontend, backend, and DynamoDB together, providing a consistent and easy-to-setup development environment.
 
 This project is a simple Task Management Application that allows users to efficiently organize and track their tasks.
@@ -29,6 +29,14 @@ To start development:
    You can access DynamoDB UI view in `http://localhost:8000/`
 8. HMR/hot reloading is enabled for both frotnend and backend.
 
+## Troubleshooting Tips
+ - In case you run into any docker related issue, try running
+    ```
+    docker-compose down
+    docker-compose build --no-cache
+    docker-compose up
+    ```
+
 ### Frontend-specific scripts
 
 - `npm run lint:frontend`: Lint frontend code
@@ -40,12 +48,3 @@ To start development:
 - `npm run lint:backend`: Lint backend code
 - `npm run format:backend`: Format backend code
 - `npm i {PACKAGE_NAME} --workspace=backend`: Install any dependency to backend project
-
-
-## Troubleshooting Tips
- - In case you run into any docker related issue, try running
-    ```
-    docker-compose down
-    docker-compose build --no-cache
-    docker-compose up
-    ```
